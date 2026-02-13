@@ -147,7 +147,7 @@ void transpose_submit(int M, int N, int A[N][M], int B[M][N])
                             tmp = A[d][d];
                         }
                     }
-                    // delay the write to avoid direct evict each other
+                    // delay the diagonal write to avoid direct evict each other
                     if (i == j)
                         B[d][d] = tmp;
                 }
