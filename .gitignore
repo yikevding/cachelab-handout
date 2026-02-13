@@ -1,0 +1,25 @@
+# Compiled binaries
+csim
+csim-ref
+test-trans
+tracegen
+*.o
+*.dSYM/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary and handin files
+*.tar
+trace.tmp
+
+# Docker
+cachelab-env*
+
+# OS files
+.DS_Store
+
+# Ignore traces output
+test-csim
+traces/

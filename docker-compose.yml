@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  cachelab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cachelab-env
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: /bin/bash
